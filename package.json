@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-usei18n",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "repository": "https://github.com/85Ryan/gatsby-plugin-usei18n.git",
   "author": "Ryan <iii.ryan@outlook.com>",
@@ -14,15 +14,17 @@
     "gatsby-plugin"
   ],
   "dependencies": {
-    "react-intl": "^5.13.2"
+    "gatsby-plugin-react-helmet": "^4.5.0",
+    "react-helmet": "^6.1.0",
+    "react-intl": "^5.17.6"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.3.0"
   },
   "peerDependencies": {
     "gatsby": ">=3.0.0",
-    "react": ">=17.0.0",
-    "react-dom": ">=17.0.0",
+    "react": "^16.9.0 || ^17.0.0",
+    "react-dom": "^16.9.0 || ^17.0.0",
     "react-intl": ">=5.13.0"
   }
 }
