@@ -78,7 +78,7 @@ This plugin is modified from these two awesome official themes: [gatsby-theme-i1
 
 By adding a suffix/postfix in your filenames you can define the locale that the document is in.
 
-You can also see an [official example](https://github.com/gatsbyjs/themes/tree/master/starters/example-i18n) to learn more.
+You can also see the [example](https://github.com/85Ryan/example-usei18n.git) to learn more.
 
 ### Plugins Options
 

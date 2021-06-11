@@ -1,15 +1,18 @@
 {
   "name": "gatsby-plugin-usei18n",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/85Ryan/gatsby-plugin-usei18n.git",
   "author": "Ryan <iii.ryan@outlook.com>",
+  "description": "A Gatsby plugin for internationalize your Gatsby site.",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo \"No build script setup\""
   },
   "keywords": [
+    "i18n",
+    "gatsby-theme",
     "gatsby",
     "gatsby-plugin"
   ],
