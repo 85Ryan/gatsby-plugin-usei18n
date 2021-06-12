@@ -25,7 +25,7 @@ const wrapPageElement = ({ element, props }, i18nOptions) => {
       let detected =
         window.localStorage.getItem(`lang`) ||
         browserLang({
-          localeLangs,
+          languages: localeLangs,
           fallback: defaultLang
         })
       if (!localeLangs.includes(detected)) {
