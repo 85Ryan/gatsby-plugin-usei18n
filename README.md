@@ -25,7 +25,7 @@ This plugin is modified from these two awesome official themes: [gatsby-theme-i1
   or
 
   ```shell
-  yarn add gatsby-plugin-usei18n gatsby-plugin-react-helmet react-helmet
+  yarn add gatsby-plugin-usei18n react-intl gatsby-plugin-react-helmet react-helmet
   ```
 
 2. Add the configuration to your `gatsby-config.js` file:
