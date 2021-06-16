@@ -137,7 +137,6 @@ const Example = ({ pageContext }) => {
   return (
     <div>
       <LangSelector
-        className="langselector"
         path={path}
         toggleLanguage={handleLanguage}
       />
@@ -151,12 +150,12 @@ export default Example
 Render HTML:
 
 ```html
-<div class="langselector">
-  <ul class="langselector_list">
-    <li class="langselector_list_item">
+<div>
+  <ul>
+    <li>
       <a href="/">English</a>
     </li>
-    <li class="langselector_list_item">
+    <li>
       <a href="/de/">Deutsch</a>
     </li>
     ...

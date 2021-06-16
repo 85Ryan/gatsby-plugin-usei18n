@@ -2,13 +2,13 @@ import React from 'react'
 import { LocalizedLink } from './localized-link'
 import { useLocalization } from '../hooks/use-localization'
 
-const LangSelector = ({ className, path, toggleLanguage }) => {
+const LangSelector = ({ path, toggleLanguage }) => {
   const { config } = useLocalization()
   return (
-    <div className={`${className}`}>
-      <ul className={`${className}_list`}>
+    <>
+      <ul>
         {config.map(local => (
-          <li key={local.code} className={`${className}_list_item`}>
+          <li key={local.code}>
             <LocalizedLink
               to={path}
               language={local.code}
@@ -19,7 +19,7 @@ const LangSelector = ({ className, path, toggleLanguage }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   )
 }
 
