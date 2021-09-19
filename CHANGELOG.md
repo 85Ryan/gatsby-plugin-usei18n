@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/85Ryan/gatsby-plugin-usei18n/compare/v1.0.3...v1.0.4) (2021-09-19)
+
+
+* :arrow_up: update packages ([4d3c739](https://github.com/85Ryan/gatsby-plugin-usei18n/commit/4d3c73975fe7270a5ae3f51c8090ecae6a0d4802))
+
 ### [1.0.3](https://github.com/85Ryan/gatsby-plugin-usei18n/compare/v1.0.2...v1.0.3) (2021-06-16)
 
 
