@@ -26,9 +26,6 @@
     "prettier": "^2.4.1"
   },
   "peerDependencies": {
-    "gatsby": ">=3.0.0",
-    "react": "^16.9.0 || ^17.0.0",
-    "react-dom": "^16.9.0 || ^17.0.0",
-    "react-intl": "^5.20.0"
+    "gatsby": ">=3.0.0"
   }
 }
