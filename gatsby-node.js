@@ -118,12 +118,18 @@ exports.onCreatePage = ({ page, actions }, i18nOptions) => {
         localeLangs: localeLangs,
         hrefLang: language.hrefLang,
         dateFormat: language.dateFormat,
-        originalPath: originalPath
+        originalPath
       }
     }
   }
 
   const newPage = generatePage(false, defaultLocale)
+
+  const regexp = new RegExp('404')
+  if (regexp.test(newPage.path)) {
+    newPage.context.routed = true
+  }
+
   createPage(newPage)
 
   const routedLanguages = prefixDefault
@@ -132,9 +138,10 @@ exports.onCreatePage = ({ page, actions }, i18nOptions) => {
 
   routedLanguages.forEach(language => {
     const localePage = generatePage(true, language)
+
     const regexp = new RegExp('/404/?$')
     if (regexp.test(localePage.path)) {
-      localePage.matchPath = `/${language}/*`
+      localePage.matchPath = `/${language.code}/*`
     }
     createPage(localePage)
   })
