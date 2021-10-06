@@ -44,11 +44,10 @@ const wrapPageElement = ({ element, props }, i18nOptions) => {
 
       setTimeout(() => {
         const currentHref = window.location.href
-        const OriginHref = window.location.origin
-        if (currentHref !== OriginHref && currentHref.indexOf(newUrl) == -1) {
+        if (currentHref.indexOf(newUrl) == -1) {
           window.location.replace(newUrl)
         }
-      }, 250)
+      }, 600)
     }
   }
   return (
