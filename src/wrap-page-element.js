@@ -54,9 +54,6 @@ const wrapPageElement = ({ element, props }, i18nOptions) => {
       }
     }
   }
-  window.onload = () => {
-    console.log('Page.loaded')
-  }
   return (
     <LocaleProvider pageContext={pageContext}>
       <Seo location={props.location} pageContext={pageContext} />
