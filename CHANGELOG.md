@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.9](https://github.com/85Ryan/gatsby-plugin-usei18n/compare/v1.0.9-alpha.4...v1.0.9) (2021-10-06)
+
+
+### Bug Fixes
+
+* :bug: set redirect timeout ([49ac16b](https://github.com/85Ryan/gatsby-plugin-usei18n/commit/49ac16b055fd67731205d98fab7b3122adcbb24f))
+
 ### [1.0.9-alpha.4](https://github.com/85Ryan/gatsby-plugin-usei18n/compare/v1.0.9-alpha.3...v1.0.9-alpha.4) (2021-10-06)
 
 ### [1.0.9-alpha.3](https://github.com/85Ryan/gatsby-plugin-usei18n/compare/v1.0.9-alpha.2...v1.0.9-alpha.3) (2021-10-06)
