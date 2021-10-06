@@ -1,7 +1,6 @@
 /* global USEI18N_LOCALES_DIRECTORY */
 import * as React from 'react'
 import browserLang from 'browser-lang'
-import { browserName } from 'react-device-detect'
 import { withPrefix } from 'gatsby'
 import { IntlProvider } from 'react-intl'
 import { LocaleProvider } from './context'
@@ -43,15 +42,12 @@ const wrapPageElement = ({ element, props }, i18nOptions) => {
       const newUrl = withPrefix(urlPrefix)
       window.localStorage.setItem(`lang`, detected)
 
-      const currentHref = window.location.href
+      // const currentHref = window.location.href
+      // if (currentHref.indexOf(newUrl) == -1) {
+      //   window.location.replace(newUrl)
+      // }
 
-      if (currentHref.indexOf(newUrl) == -1) {
-        if (browserName === 'Safari') {
-          window.location.assign(newUrl)
-        } else {
-          window.location.replace(newUrl)
-        }
-      }
+      window.location.replace(newUrl)
     }
   }
 
