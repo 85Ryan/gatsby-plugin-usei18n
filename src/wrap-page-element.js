@@ -42,16 +42,13 @@ const wrapPageElement = ({ element, props }, i18nOptions) => {
       const newUrl = withPrefix(urlPrefix)
       window.localStorage.setItem(`lang`, detected)
 
-      // setTimeout(() => {
-      //   const currentHref = window.location.href
-      //   if (currentHref && currentHref.indexOf(newUrl) == -1) {
-      //     window.location.replace(newUrl)
-      //   }
-      // }, 250)
-      const currentHref = window.location.href
-      if (currentHref && currentHref.indexOf(newUrl) == -1) {
-        window.location.replace(newUrl)
-      }
+      setTimeout(() => {
+        const currentHref = window.location.href
+        const OriginHref = window.location.origin
+        if (currentHref !== OriginHref && currentHref.indexOf(newUrl) == -1) {
+          window.location.replace(newUrl)
+        }
+      }, 250)
     }
   }
   return (
