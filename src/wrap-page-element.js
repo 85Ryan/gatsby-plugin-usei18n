@@ -42,16 +42,21 @@ const wrapPageElement = ({ element, props }, i18nOptions) => {
       const newUrl = withPrefix(urlPrefix)
       window.localStorage.setItem(`lang`, detected)
 
-      setTimeout(function () {
-        const currentHref = window.location.href
-        if (currentHref.indexOf(newUrl) == -1) {
-          window.location.replace(newUrl)
-        }
-      }, 250)
-      // window.location.href = newUrl
+      // setTimeout(() => {
+      //   const currentHref = window.location.href
+      //   if (currentHref && currentHref.indexOf(newUrl) == -1) {
+      //     window.location.replace(newUrl)
+      //   }
+      // }, 250)
+      const currentHref = window.location.href
+      if (currentHref && currentHref.indexOf(newUrl) == -1) {
+        window.location.replace(newUrl)
+      }
     }
   }
-
+  window.onload = () => {
+    console.log('Page.loaded')
+  }
   return (
     <LocaleProvider pageContext={pageContext}>
       <Seo location={props.location} pageContext={pageContext} />
