@@ -47,7 +47,7 @@ const wrapPageElement = ({ element, props }, i18nOptions) => {
         if (currentHref.indexOf(newUrl) == -1) {
           window.location.replace(newUrl)
         }
-      }, 600)
+      }, 500)
     }
   }
   return (
