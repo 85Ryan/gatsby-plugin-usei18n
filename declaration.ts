@@ -1,0 +1,1 @@
+declare module 'gatsby-plugin-usei18n';
